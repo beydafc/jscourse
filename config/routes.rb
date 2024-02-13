@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root "pages#home"
+
+  get "svg", to: "pages#svg", as: :svg
 end
