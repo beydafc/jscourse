@@ -1,2 +1,70 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>EMMET in HTML</h1>
+
+<%#= Para generar un boilerplate de Emmet, escribimos "!" y da lo siguiente: %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<%#= Para crear una etiqueta con una clase: span.purple + Enter: %>
+<span class="purple"></span>
+
+<%#= Lo mismo con id´s: span#purple %>
+
+<span id="purple"></span>
+
+<%#= Si escribimos ".purple" + Enter, va a generar automáticamente un div con el nombre de esa clase: %>
+
+<div class="purple"></div>
+
+<%#= Para crear etiquetas anidadas: div.purple>h1.header + Enter: %>
+
+<div class="purple">
+  <h1 class="header"></h1>
+</div>
+
+<%#= En caso de ul: ul>li*5 + Enter: %>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<%#= Si ponemos "{}" con los li, podemos poner el texto que queremos que lleven los li ul>li*3{ejemplo} %>
+
+<ul>
+  <li>ejemplo</li>
+  <li>ejemplo</li>
+  <li>ejemplo</li>
+</ul>
+
+<%#= El "$" genera numeración automática: ul>li*3{Item n. $}%>
+
+<ul>
+  <li>Item n. 1</li>
+  <li>Item n. 2</li>
+  <li>Item n. 3</li>
+</ul>
+
+<%#= Si queremos crear etiquetas individuales (no anidadas): header+footer %>
+
+<header></header>
+<footer></footer>
+
+<%#= Si queremos hacer lo mismo, pero ahora queremos anidar algo en alguna de las dos etiquetas: header>nav^footer %>
+
+<header>
+  <nav></nav>
+</header>
+<footer></footer>
+
+<%#= Cmnd+shift+7 PARA COMENTAR Y DESCOMENTAR %>
