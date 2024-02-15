@@ -46,3 +46,65 @@ También se les puede agregar estilo css:
 <br>
 
 <p>Stlysheet de eejmplo para estilizar una tabla: https://github.com/mdn/learning-area/blob/main/html/tables/basic/minimal-table.css</p>
+
+<%# colspan se usa para expandir las celdas a más de 1 columna, por ejemplo, colspan=2 hace que la celda se expanda 2 columnas %>
+
+<p>Ejemplo sin colspan:</p>
+
+<table class="wstyle">
+  <tr class="wstyle">
+    <th class="wstyle">Animals</th>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle">Hippopotamus</th>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle">Horse</th>
+    <td class="wstyle">Mare</td>
+  </tr>
+  <tr class="wstyle">
+    <td class="wstyle">Stallion</td>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle">Crocodile</th>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle">Chicken</th>
+    <td class="wstyle">Hen</td>
+  </tr>
+  <tr class="wstyle">
+    <td class="wstyle">Rooster</td>
+  </tr>
+</table>
+
+<br>
+
+<p>Ejemplo con colspan:</p>
+
+<table class="wstyle">
+  <tr class="wstyle">
+    <th class="wstyle">Animals</th>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle" colspan=2>Hippopotamus</th>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle">Horse</th>
+    <td class="wstyle">Mare</td>
+  </tr>
+  <tr class="wstyle">
+    <td class="wstyle">Stallion</td>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle" colspan=2>Crocodile</th>
+  </tr>
+  <tr class="wstyle">
+    <th class="wstyle">Chicken</th>
+    <td class="wstyle">Hen</td>
+  </tr>
+  <tr class="wstyle">
+    <td class="wstyle">Rooster</td>
+  </tr>
+</table>
+
+
