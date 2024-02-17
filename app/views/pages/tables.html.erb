@@ -138,3 +138,24 @@ Para no tener que estilizar cada etiqueta (<th>, ej.), podemos usar <col> y <col
 
 Hay que poner el primer <col>, porque si no, no se aplicaría el estilo requerido en la segunda columna %>
 
+<br>
+
+<%# Si queremos agregar el mismo estilo a más de 1 columna, hay que agregar span: %>
+
+<table>
+  <colgroup>
+    <col style="background-color: yellow" span="2" />
+  </colgroup>
+  <tr>
+    <th>Data 1</th>
+    <th>Data 2</th>
+  </tr>
+  <tr>
+    <td>Calcutta</td> 
+    <td>Orange</td>
+  </tr>
+  <tr>
+    <td>Robots</td>
+    <td>Jazz</td>
+  </tr>
+</table>
