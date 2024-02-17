@@ -107,4 +107,34 @@ También se les puede agregar estilo css:
   </tr>
 </table>
 
+<%# Podemos usar rowspan para expandir de igual manera, pero ahora en filas %>
+
+<%# Para estilos:
+
+Para no tener que estilizar cada etiqueta (<th>, ej.), podemos usar <col> y <colgroup>%>
+
+<p>Ejemplo de estilo con colgroup:</p>
+
+<table>
+  <colgroup>
+    <col />
+    <col style="background-color: yellow" />
+  </colgroup>
+  <tr>
+    <th>Data 1</th>
+    <th>Data 2</th>
+  </tr>
+  <tr>
+    <td>Calcutta</td>
+    <td>Orange</td>
+  </tr>
+  <tr>
+    <td>Robots</td>
+    <td>Jazz</td>
+  </tr>
+</table>
+
+<%# Haciéndole sentido: colgroup agrupa la tabla completa, y cada <col> se pone para dar estilo a una columna diferentes
+
+Hay que poner el primer <col>, porque si no, no se aplicaría el estilo requerido en la segunda columna %>
 
