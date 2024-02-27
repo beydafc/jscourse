@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   get "svg", to: "pages#svg", as: :svg
   get "tables", to: "pages#tables", as: :tables
+  get "tables2", to: "pages#tables2", as: :tables2
+
 end
