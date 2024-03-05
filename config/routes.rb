@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get "tables", to: "pages#tables", as: :tables
   get "tables2", to: "pages#tables2", as: :tables2
   get "default", to: "pages#default", as: :default
+  get "units", to: "pages#units", as: :units
 
 end
