@@ -1,0 +1,19 @@
+.wrapper {
+  font-size: 1em;
+}
+
+.px {
+  width: 200px;
+  border: solid darkblue;
+}
+
+.vw {
+  width: 10vw;
+  border: solid darkblue;
+}
+
+.em {
+  font-size: 2em;
+  width: 10em;
+  border: solid darkblue;
+}

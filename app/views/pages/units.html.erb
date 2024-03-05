@@ -1,31 +1,56 @@
-<h1>CSS Units</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%# <link rel="stylesheet" type="text/css" href="/assets/stylesheets/units.css"> %>
+  <title>Document</title>
+</head>
+<body>
+  <h1>CSS Units</h1>
 
-<h4>Diferencia entre Unidades absolutas y relativas:</h4>
+  <h4>Diferencia entre Unidades absolutas y relativas:</h4>
 
-<p>Absolutas: siempre son las mismas en cualquier contexto. El tamaño del pixel no cambia</p>
-<p><strong>px es la única unidad absoluta que debería de usarse</strong></p>
-<p>1px = 1/96th of 1in</p>
+  <p>Absolutas: siempre son las mismas en cualquier contexto. El tamaño del pixel no cambia</p>
+  <p><strong>px es la única unidad absoluta que debería de usarse</strong></p>
+  <p>1px = 1/96th of 1in</p>
 
-<br>
+  <br>
 
-<p>Relativas: unidades que pueden cambiar dependiendo del contexto</p>
+  <p>Relativas: unidades que pueden cambiar dependiendo del contexto</p>
 
-<p>Un ejemplo son em y rem</p>
-<p>1em = es el tamaño del elemento padre, que puede ser, por ejemplo, 16px, por lo que si utilizamos "4em", nos dará un total de 64px</p>
+  <p>Un ejemplo son em y rem</p>
+  <p>1em = es el tamaño del elemento padre, que puede ser, por ejemplo, 16px, por lo que si utilizamos "4em", nos dará un total de 64px</p>
 
-<br>
-<p>rem es el font-size del elemento raíz.</p>
+  <br>
+  <p>rem es el font-size del elemento raíz.</p>
 
-<p><strong>Lo recomendable es usar rem</strong> ya que los browsers modifican el tamaño de manera automática</p>
+  <p><strong>Lo recomendable es usar rem</strong> ya que los browsers modifican el tamaño de manera automática</p>
 
-<h3>vh & vw</h3>
+  <h3>vh & vw</h3>
 
-<p>Es relativo al tamaño del viewport</p>
-<p>Ej: 1vh == 1% de la altura de la pantalla</p>
+  <p>Es relativo al tamaño del viewport</p>
+  <p>Ej: 1vh == 1% de la altura de la pantalla</p>
 
-<p><strong>Otros valores relativos:</strong></p>
+  <p><strong>Otros valores relativos:</strong></p>
 
-<ul>
-  <li>lh: line height del elemento</li>
-  <li>rlh: line height del elemento raíz</li>
-</ul>
+  <ul>
+    <li>lh: line height del elemento</li>
+    <li>rlh: line height del elemento raíz</li>
+  </ul>
+
+
+  <p>Ejemplo:</p>
+
+  <div class="wrapper">
+    <div class="box px">I am 200px wide</div>
+    <div class="box vw">I am 10vw wide</div>
+    <div class="box em">I am 10em wide</div>
+  </div>
+
+  <p>La primera caja tiene sus valores en px, por lo que el tamaño permanece igual siempre</p>
+  <p>El valor está en vw, por lo que el tamaño va a depender del tamaño de la pestaña que tengamos en ese momento</p>
+  <p>El tercer valor está en em, por lo que si cambiamos el font-size, el tamaño del div cambia también</p>
+
+</body>
+</html>
